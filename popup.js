@@ -31,10 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
           a.href = `https://linux.do/t/topic/${item.id}`; // 使用 item.id
           a.textContent = item.title; // 使用 title 属性
           a.target = '_blank'; // 在新标签页中打开链接
-          a.style.textDecoration = 'none'; // 去掉下划线
-          a.style.color = 'inherit'; // 继承父元素的颜色
 
           li.appendChild(a); // 将 a 标签添加到 li 中
+
           dataList.appendChild(li); // 将 li 添加到列表中
         });
       } else {
