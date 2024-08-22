@@ -27,7 +27,7 @@ chrome.runtime.sendMessage({
 }, (response) => {
   if (chrome.runtime.lastError) {
     console.error('Error:', chrome.runtime.lastError.message);
-    dataList.innerHTML = '<li>Error loading data.</li>';
+    dataList.innerHTML = '<li>先打开一个 linuxdo 网页，再使用插件。</li>';
     return;
   }
 

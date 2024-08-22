@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, (response) => {
       if (response.error) {
         console.error('Error:', response.error);
-        dataList.innerHTML = '<li>Error loading data.</li>';
+        dataList.innerHTML = '<li>先打开一个 linuxdo 网页，再使用插件。</li>';
         loadingMessage.classList.add('hidden'); // 隐藏加载信息
         return;
       }
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       loadingMessage.classList.add('hidden'); // 隐藏加载信息
       completionMessage.classList.remove('hidden'); // 显示完成信息
       setTimeout(() => {
-        completionMessage.classList.add('hidden'); // 3秒后隐藏完成信息
+        completionMessage.classList.add('hidden'); // 3 秒后隐藏完成信息
       }, 3000);
     });
   };
